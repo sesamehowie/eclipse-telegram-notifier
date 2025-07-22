@@ -91,7 +91,7 @@ async function getTokenBalance(address, chatId) {
                 TOKEN_2022_PROGRAM_ID
             );
 
-            balance = Number(tokenAccount.amount) / Math.pow(10, 9);
+            balance = Number(tokenAccount.amount) / Math.pow(10, 6);
             tokenAccountExists = true;
 
             console.log(`Token account found: ${associatedTokenAddress.toBase58()}`);
